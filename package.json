@@ -1,4 +1,5 @@
 {
+  "home": "https://Arshadali008.github.io/redox-todoapp",
   "name": "redux-todoapp",
   "version": "0.1.0",
   "private": true,
@@ -8,11 +9,16 @@
     "@testing-library/user-event": "^13.5.0",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
+    "react-redux": "^9.0.4",
     "react-scripts": "5.0.1",
+    "redux": "^5.0.0",
+    "redux-thunk": "^2.3.0",
     "web-vitals": "^2.1.4"
   },
   "scripts": {
     "start": "react-scripts start",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
@@ -34,5 +40,10 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "gh": "^2.8.9",
+    "gh-pages": "^6.1.0",
+    "tailwindcss": "^3.3.6"
   }
 }
